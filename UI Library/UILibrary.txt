@@ -18,7 +18,7 @@ ProtectGui(ScreenGui);
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
 
-local Toggles = {}; -- monkeyvio
+local Toggles = {};
 local Options = {};
 
 getgenv().Toggles = Toggles;
@@ -30,26 +30,27 @@ local Library = {
 
     HudRegistry = {};
 
-    FontColor = Color3.fromRGB(118, 118, 118);
-    FontColor2 = Color3.fromRGB(198, 198, 198);
-    MainColor = Color3.fromRGB(11, 11, 11);
+    FontColor = Color3.fromRGB(255, 255, 255);
+    FontColor2 = Color3.fromRGB(255, 255, 255);
+    MainColor = Color3.fromRGB(28, 28, 28);
     SelectedTabColor = Color3.fromRGB(23, 23, 23);
-    BackgroundColor = Color3.fromRGB(15, 15, 15);
-    AccentColor = Color3.fromRGB(93, 88, 157);
-    OutlineColor = Color3.fromRGB(25, 25, 25); -- monkeyvio
+    BackgroundColor = Color3.fromRGB(20, 20, 20);
+    AccentColor = Color3.fromRGB(255, 165, 200);
+    OutlineColor = Color3.fromRGB(50, 50, 50);
+    RiskColor = Color3.fromRGB(255, 50, 50),
 
     Black = Color3.new(0, 0, 0);
 
     OpenedFrames = {};
 
     Signals = {};
-    ScreenGui = ScreenGui; -- monkeyvio
+    ScreenGui = ScreenGui;
 };
 
 local RainbowStep = 0
 local Hue = 0
 
-table.insert(Library.Signals, RenderStepped:Connect(function(Delta) -- monkeyvio
+table.insert(Library.Signals, RenderStepped:Connect(function(Delta)
     RainbowStep = RainbowStep + Delta
 
     if RainbowStep >= (1 / 60) then
@@ -64,7 +65,7 @@ table.insert(Library.Signals, RenderStepped:Connect(function(Delta) -- monkeyvio
         Library.CurrentRainbowHue = Hue;
         Library.CurrentRainbowColor = Color3.fromHSV(Hue, 0.8, 1);
     end
-end)) -- monkeyvio
+end))
 
 function Library:AttemptSave()
     if Library.SaveManager then
@@ -136,7 +137,7 @@ function Library:MakeDraggable(Instance, Cutoff)
                     Mouse.X - ObjPos.X + (Instance.Size.X.Offset * Instance.AnchorPoint.X),
                     0,
                     Mouse.Y - ObjPos.Y + (Instance.Size.Y.Offset * Instance.AnchorPoint.Y)
-                ); -- monkeyvio
+                );
 
                 RenderStepped:Wait();
             end;
@@ -155,7 +156,7 @@ function Library:AddToolTip(InfoStr, HoverInstance)
         Parent = Library.ScreenGui,
 
         Visible = false,
-    }) -- monkeyvio
+    })
 
     local Label = Library:CreateLabel({
         Position = UDim2.fromOffset(3, 1),
@@ -195,7 +196,7 @@ function Library:AddToolTip(InfoStr, HoverInstance)
         IsHovering = false
         Tooltip.Visible = false
     end)
-end -- monkeyvio
+end
  
 function Library:OnHighlight(HighlightInstance, Instance, Properties, PropertiesDefault)
     HighlightInstance.MouseEnter:Connect(function()
@@ -825,7 +826,7 @@ do
                     ModeButton:Select();
                     Library:AttemptSave();
                 end;
-            end); -- monkeyvio
+            end);
 
             if Mode == KeyPicker.Mode then
                 ModeButton:Select();
@@ -876,7 +877,7 @@ do
                     return InputService:IsKeyDown(Enum.KeyCode[KeyPicker.Value]);
                 end;
             else
-                return KeyPicker.Toggled; -- monkeyvio
+                return KeyPicker.Toggled;
             end;
         end;
 
@@ -1188,7 +1189,7 @@ do
                 if Input.UserInputType == Enum.UserInputType.MouseButton1 and not Library:MouseIsOverOpenedFrame() then
                     Func();
                 end;
-            end); -- monkeyvio
+            end);
 
             function SubButton:AddTooltip(tip)
                 if type(tip) == 'string' then
@@ -1229,14 +1230,14 @@ do
             BorderMode = Enum.BorderMode.Inset;
             Size = UDim2.new(1, 0, 1, 0);
             ZIndex = 6;
-            Parent = DividerOuter; -- monkeyvio
+            Parent = DividerOuter;
         }); 
 
-        Library:AddToRegistry(DividerOuter, { -- monkeyvio
+        Library:AddToRegistry(DividerOuter, {
             BorderColor3 = 'Black';
         });
 
-        Library:AddToRegistry(DividerInner, { -- monkeyvio
+        Library:AddToRegistry(DividerInner, {
             BackgroundColor3 = 'MainColor';
             BorderColor3 = 'OutlineColor';
         });
@@ -1406,7 +1407,7 @@ do
         Box:GetPropertyChangedSignal('Text'):Connect(Update)
         Box:GetPropertyChangedSignal('CursorPosition'):Connect(Update)
         Box.FocusLost:Connect(Update)
-        Box.Focused:Connect(Update) -- monkeyvio
+        Box.Focused:Connect(Update)
  
         Library:AddToRegistry(Box, {
             TextColor3 = 'FontColor';
@@ -1440,10 +1441,10 @@ do
             BorderColor3 = Color3.new(0, 0, 0);
             Size = UDim2.new(0, 13, 0, 13);
             ZIndex = 5;
-            Parent = Container; -- monkeyvio
+            Parent = Container;
         });
 
-        Library:AddToRegistry(ToggleOuter, { -- monkeyvio
+        Library:AddToRegistry(ToggleOuter, {
             BorderColor3 = 'Black';
         });
 
@@ -1554,12 +1555,12 @@ do
         assert(Info.Default and Info.Text and Info.Min and Info.Max and Info.Rounding, 'Bad Slider Data');
 
         local Slider = {
-            Value = Info.Default; -- monkeyvio
+            Value = Info.Default;
             Min = Info.Min;
             Max = Info.Max;
-            Rounding = Info.Rounding; -- monkeyvio
+            Rounding = Info.Rounding;
             MaxSize = 232; 
-            Type = 'Slider'; -- monkeyvio
+            Type = 'Slider';
         };
 
         local Groupbox = self;
@@ -1586,11 +1587,11 @@ do
             Parent = Container;
         });
 
-        Library:AddToRegistry(SliderOuter, { -- monkeyvio
+        Library:AddToRegistry(SliderOuter, {
             BorderColor3 = 'Black';
         });
 
-        local SliderInner = Library:Create('Frame', { -- monkeyvio
+        local SliderInner = Library:Create('Frame', {
             BackgroundColor3 = Library.MainColor;
             BorderColor3 = Library.OutlineColor;
             BorderMode = Enum.BorderMode.Inset;
@@ -1626,11 +1627,11 @@ do
             Parent = Fill;
         });
 
-        Library:AddToRegistry(HideBorderRight, { -- monkeyvio
+        Library:AddToRegistry(HideBorderRight, {
             BackgroundColor3 = 'AccentColor';
         });
 
-        local DisplayLabel = Library:CreateLabel({ -- monkeyvio
+        local DisplayLabel = Library:CreateLabel({
             Size = UDim2.new(1, 0, 1, 0);
             TextSize = 14;
             Text = 'Infinite';
@@ -1981,9 +1982,9 @@ do
 
                 function Table:UpdateButton()
                     if Info.Multi then
-                        Selected = Dropdown.Value[Value]; -- monkeyvio
+                        Selected = Dropdown.Value[Value];
                     else
-                        Selected = Dropdown.Value == Value; -- monkeyvio
+                        Selected = Dropdown.Value == Value;
                     end;
 
                     ButtonLabel.TextColor3 = Selected and Library.AccentColor or Library.FontColor;
@@ -2485,9 +2486,9 @@ function Library:CreateWindow(...)
         Parent = Inner;
     });
 
-    Library:AddToRegistry(MainSectionOuter, { -- monkeyvio
+    Library:AddToRegistry(MainSectionOuter, {
         BackgroundColor3 = 'BackgroundColor';
-        BorderColor3 = 'OutlineColor'; -- monkeyvio
+        BorderColor3 = 'OutlineColor';
     });
 
     local MainSectionInner = Library:Create('Frame', {
@@ -2643,7 +2644,7 @@ function Library:CreateWindow(...)
             FillDirection = Enum.FillDirection.Vertical;
             SortOrder = Enum.SortOrder.LayoutOrder;
             Parent = RightSide;
-        }); -- monkeyvio
+        });
 
         function Tab:ShowTab()
             for _, Tab in next, Window.Tabs do
@@ -2770,7 +2771,7 @@ function Library:CreateWindow(...)
             return Tab:AddGroupbox({ Side = 2; Name = Name; });
         end;
 
-        function Tab:AddTabbox(Info) -- monkeyvio
+        function Tab:AddTabbox(Info)
             local Tabbox = {
                 Tabs = {};
             };
@@ -2917,7 +2918,7 @@ function Library:CreateWindow(...)
                     local TabCount = 0;
 
                     for _, Tab in next, Tabbox.Tabs do
-                        TabCount = TabCount +  1; -- monkeyvio
+                        TabCount = TabCount +  1;
                     end;
 
                     for _, Button in next, TabboxButtons:GetChildren() do
@@ -2948,7 +2949,7 @@ function Library:CreateWindow(...)
                 Tab.Container = Container;
                 Tabbox.Tabs[Name] = Tab;
 
-                setmetatable(Tab, BaseGroupbox); -- monkeyvio
+                setmetatable(Tab, BaseGroupbox);
 
                 Tab:AddBlank(3);
                 Tab:Resize();
@@ -2974,10 +2975,10 @@ function Library:CreateWindow(...)
         end;
 
         TabButton.InputBegan:Connect(function(Input)
-            if Input.UserInputType == Enum.UserInputType.MouseButton1 then -- monkeyvio
+            if Input.UserInputType == Enum.UserInputType.MouseButton1 then
                 Tab:ShowTab();
             end;
-        end); -- monkeyvio
+        end);
 
         -- This was the first tab added, so we show it by default.
         if #TabContainer:GetChildren() == 1 then
@@ -3002,9 +3003,9 @@ function Library:CreateWindow(...)
         ModalElement.Modal = Outer.Visible;
 
         local oIcon = Mouse.Icon;
-        local State = InputService.MouseIconEnabled; -- monkeyvio
+        local State = InputService.MouseIconEnabled;
  
-        local Cursor = Drawing.new('Triangle'); -- monkeyvio
+        local Cursor = Drawing.new('Triangle');
         Cursor.Thickness = 1;
         Cursor.Filled = true;
 
@@ -3039,7 +3040,7 @@ function Library:CreateWindow(...)
             for i, colorPicker in next, Options do
                 if colorPicker.Type == 'ColorPicker' then
                     local displayFrame = colorPicker.DisplayFrame
-                    local tabFrame = displayFrame and displayFrame:findFirstAncestor('TabFrame') -- monkeyvio
+                    local tabFrame = displayFrame and displayFrame:findFirstAncestor('TabFrame')
 
                     if tabFrame.Visible and Library:IsMouseOverFrame(colorPicker.DisplayFrame) then
                         HoveringColorPicker = colorPicker
@@ -3060,7 +3061,7 @@ function Library:CreateWindow(...)
         end
     end))
 
-    if Config.AutoShow then task.spawn(Library.Toggle) end -- monkeyvio
+    if Config.AutoShow then task.spawn(Library.Toggle) end
 
     Window.Holder = Outer;
 
