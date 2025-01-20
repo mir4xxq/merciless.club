@@ -5009,7 +5009,7 @@ if data.success == false then
     return false
 end
 
-print(" < [quantum.wtf]  - Your key is valid, loading... >")
+print(" < [quantum.wtf] - Your key is valid, loading... >")
 Library:Notify(' [quantum.wtf] - Your key is valid, loading...')
 
 --// Silent Aim
