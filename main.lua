@@ -4,7 +4,7 @@
 
 ]]
 
-_G.LicenseKey = License
+local License = getgenv().LicenseKey
 
 if (not LPH_OBFUSCATED) then
     LPH_NO_VIRTUALIZE = function(...) return (...) end;
