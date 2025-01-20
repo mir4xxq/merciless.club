@@ -4992,8 +4992,6 @@ elseif (data.message == "invalidver") then
    return false
 else
    print(" < [quantum.wtf] - Error: " .. data.message .. " > ")
-   Library:Notify(' [quantum.wtf] - Error: ' .. data.message .. "")
-
    return false
 end
 
@@ -5006,8 +5004,6 @@ local data = HttpService:JSONDecode(req)
 
 if data.success == false then
     print(" < [quantum.wtf] - Error: " .. data.message .. " > ")
-    Library:Notify(' [quantum.wtf] - Error: ' .. data.message .. "")
-
     return false
 end
 
