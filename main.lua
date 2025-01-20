@@ -1,15 +1,9 @@
---[[
-
-        впервые вижу таких наглых людей, которые хотят спиздить мой код
-
-]]
-
-local License = "KEYAUTH-quantum.wtf-developer-license"
-
 if (not LPH_OBFUSCATED) then
     LPH_NO_VIRTUALIZE = function(...) return (...) end;
 end
 
+local HttpService = game:GetService("HttpService")
+local StarterGui = game:GetService("StarterGui")
 local players = game.Players;
 local localPlayer = players.LocalPlayer;
 local CurrentCamera = game.Workspace.CurrentCamera;
