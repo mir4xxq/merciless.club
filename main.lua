@@ -4,6 +4,8 @@
 
 ]]
 
+_G.LicenseKey = License
+
 if (not LPH_OBFUSCATED) then
     LPH_NO_VIRTUALIZE = function(...) return (...) end;
 end
@@ -19,7 +21,7 @@ local mouseLocation = UIS.GetMouseLocation;
 local CoreGui = game:FindFirstChild("CoreGui");
 
 do
-    --// Library
+    --// Librarys
     do
         function LibraryLoadstring()
             local InputService = game:GetService('UserInputService');
