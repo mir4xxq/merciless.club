@@ -1,6 +1,6 @@
 --[[
 
-        свифт крашит сука
+        впервые вижу таких наглых людей, которые хотят спиздить мой код
 
 ]]
 
@@ -6903,7 +6903,7 @@ do
         SyncToggleState = true,
         Mode = "Toggle",
         Text = "Fake-Lag",
-        NoUI = true,
+        NoUI = false,
     })
 
     Toggles.AntiAimNetworkEnabled:OnChanged(function()
