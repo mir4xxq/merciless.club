@@ -1,12 +1,11 @@
 --[[
 
-    впервые вижу таких наглых людей, которые хотят спиздить мой код
+        впервые вижу таких наглых людей, которые хотят спиздить мой код
 
 ]]
 
 local License = "KEYAUTH-quantum.wtf-developer-license"
 
-function LoadQuantumWtfScript()
 if (not LPH_OBFUSCATED) then
     LPH_NO_VIRTUALIZE = function(...) return (...) end;
 end
@@ -7959,8 +7958,6 @@ oldIndex = hookmetamethod(game, "__index", newcclosure(function(self, Index)
 end))
 
 Library:Notify(' [quantum.wtf] - Successfully loaded!')
-end
-LoadQuantumWtfScript()
 
 print(' Logged In!')
 print(' User Data')
