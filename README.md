@@ -10,7 +10,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 
 ## Сhangelogs: | Bзменения:
 
-### Private Beta V0.2:
+### Beta - V0.2:
 
 **ENG:**
 ```
