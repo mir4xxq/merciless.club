@@ -14,7 +14,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 [~] Fixed some colors that didnt work at visuals tab
 [~] Small ui changes
 ```
-RU:
+
+**RU:**
 ```
 [~] Пофикшены некоторые цвета которые не работали во вкладке визуалов
 [~] Мелкие изменения в пользовательском интерфейсе
