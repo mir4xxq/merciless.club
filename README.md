@@ -8,6 +8,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 ```
 
 
-**Latest changelog: | Последние изменения: **
+**Latest changelog: | Последние изменения:**
  - \[~] fixed some colors at visuals tab
  - \[~] small ui changes
