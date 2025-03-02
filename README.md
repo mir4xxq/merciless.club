@@ -8,7 +8,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 ```
 
 
-## Сhangelogs: | Bзменения:
+## Сhangelogs: | Изменения:
 
 ### Beta - V0.2:
 
