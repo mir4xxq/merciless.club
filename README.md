@@ -1,4 +1,4 @@
-### Script Loadstring | Строки запуска скрипта:
+### Script Loadstring: | Строки запуска скрипта:
 
 ```lua
 printidentity()
@@ -8,6 +8,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 ```
 
 
-**Latest changelog:**
+**Latest changelog: | Последние изменения: **
  - \[~] fixed some colors at visuals tab
  - \[~] small ui changes
