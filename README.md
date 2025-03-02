@@ -1,4 +1,4 @@
-### Loadstring: | Строки запуска:
+## Loadstring: | Строки запуска:
 
 ```lua
 printidentity()
@@ -8,8 +8,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 ```
 
 
-**Latest changelog: | Последние изменения:**
+### Latest changelog: | Последние изменения:
+**ENG:**
 ```
-[~] fixed some colors at visuals tab | пофиксил цвета во вкладке визуалов
-[~] small ui changes | мелкие изменения в пользовательском интерфейсе
+[~] Fixed some colors that didnt work at visuals tab
+[~] Small ui changes
+```
+RU:
+```
+[~] Пофикшены некоторые цвета которые не работали во вкладке визуалов
+[~] Мелкие изменения в пользовательском интерфейсе
 ```
