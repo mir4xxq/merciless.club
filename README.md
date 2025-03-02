@@ -1,4 +1,4 @@
-### Script Loadstring: | Строки запуска скрипта:
+### Loadstring: | Строки запуска:
 
 ```lua
 printidentity()
