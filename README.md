@@ -19,6 +19,8 @@ ENG:
 [+] Added Network Massive Lag
 [+] Added Speedhack (Cframe Speed)
 [+] Added Invisible Exploit
+[+] Added Teleport (list of locations will be supplemented)
+    [+] CoR Base
 [+] The authorization system is fully rewritten
 [~] Small changes and fixes of bugs with binds, color picker and others in the UI (again)
 
@@ -28,6 +30,8 @@ RU:
 [+] Добавлен Network Massive Lag
 [+] Добавлен Speedhack (CFrame Speed)
 [+] Добавлен Invisible Exploit
+[+] Добавлен Teleport (список локаций будет дополнятся)
+    [+] CoR Base
 [+] Полностью переписана система авторизации
 [~] Мелкие изменения и фиксы багов с биндами, средством выбора цвета и другими в пользовательском интерфейсе (опять)
 ```
