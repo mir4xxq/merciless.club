@@ -22,7 +22,8 @@ ENG:
 [+] Added Teleport (list of locations will be supplemented)
     [+] CoR Base
 [+] The authorization system is fully rewritten
-[~] Small changes and fixes of bugs with binds, color picker and others in the UI (again)
+[~] Small changes in UI (again)
+[~] Fixes of bugs with binds, color pickers and other UI elements
 
 RU:
 [+] Добавлена функция изменения цвета элементов ESP на цвет команды игроков (Team Color)
@@ -33,7 +34,8 @@ RU:
 [+] Добавлен Teleport (список локаций будет дополнятся)
     [+] CoR Base
 [+] Полностью переписана система авторизации
-[~] Мелкие изменения и фиксы багов с биндами, средством выбора цвета и другими в пользовательском интерфейсе (опять)
+[~] Мелкие изменения в пользовательском интерфейсе (опять)
+[~] Фиксы багов с биндами, средствами выбора цвета и другими элементами пользовательского интерфейса
 ```
 
 ### Beta - V0.2:
