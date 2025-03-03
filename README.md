@@ -16,9 +16,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/antilose.cc/re
 ENG:
 [+] Added the function of changing the color of ESP elements to the color of the player team (Team Color)
 [+] Added Anti-Aim
-[+] Added Network Massive Lag
-[+] Added Speedhack (Cframe Speed)
+    [+] Custom
+        [+] Custom X
+        [+] Custom Y
+        [+] Custom Z
+    [+] Random
+        [+] Random Range
+    [+] Strafe
+        [+] Strafe Speed
+        [+] Strafe Distance
+        [+] Strafe Height
+[+] Added Network Massive Tag
+    [+] Walking Check
+    [+] Amount
+[+] Added Speedhack (CFrame Speed)
+    [+] Amount
 [+] Added Invisible Exploit
+    [+] Spoof Position
+    [+] Massive Spoof
 [+] Added Teleport (list of locations will be supplemented)
     [+] CoR Base
 [+] The authorization system is fully rewritten
