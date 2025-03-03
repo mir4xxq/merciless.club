@@ -43,9 +43,24 @@ ENG:
 RU:
 [+] Добавлена функция изменения цвета элементов ESP на цвет команды игроков (Team Color)
 [+] Добавлен Anti-Aim
-[+] Добавлен Network Massive Lag
+    [+] Custom
+        [+] Custom X
+        [+] Custom Y
+        [+] Custom Z
+    [+] Random
+        [+] Random Range
+    [+] Strafe
+        [+] Strafe Speed
+        [+] Strafe Distance
+        [+] Strafe Height
+[+] Добавлен Network Massive Tag
+    [+] Walking Check
+    [+] Amount
 [+] Добавлен Speedhack (CFrame Speed)
+    [+] Amount
 [+] Добавлен Invisible Exploit
+    [+] Spoof Position
+    [+] Massive Spoof
 [+] Добавлен Teleport (список локаций будет дополнятся)
     [+] CoR Base
 [+] Полностью переписана система авторизации
