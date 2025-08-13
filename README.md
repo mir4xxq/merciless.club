@@ -1,12 +1,5 @@
-# Loadstring: | Строки запуска:
-
-```lua
-printidentity()
-getgenv().LicenseKey = "" -- put your license key there
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/nox1fy/merciless.club/refs/heads/main/main.lua", true))()
-```
-
+# ENG: At the moment, the script is unavailable for purchase/receipt, due to the creator's desire to improve it only in private (or rather, not in public)
+# RU: На данный момент, скрипт недоступен к покупке/получению, из-за желаний создателя улучшать его только в приватной форме (а точнее не на глазу у публики)
 
 ## Сhangelogs: | Изменения:
 
