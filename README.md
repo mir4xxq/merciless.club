@@ -1,5 +1,6 @@
-# ENG: At the moment, the script is unavailable for purchase/receipt, due to the creator's desire to improve it only in private (or rather, not in public)
-# RU: На данный момент, скрипт недоступен к покупке/получению, из-за желаний создателя улучшать его только в приватной форме (а точнее не на глазу у публики)
+# Message to users: | Сообщение пользователям: 
+### ENG: At the moment, the script is unavailable for purchase/receipt, due to the creator's desire to improve it only in private (or rather, not in public)
+### RU: На данный момент, скрипт недоступен к покупке/получению, из-за желаний создателя улучшать его только в приватной форме (а точнее не на глазу у публики)
 
 ## Сhangelogs: | Изменения:
 
