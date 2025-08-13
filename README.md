@@ -4,7 +4,7 @@
 
 ## Сhangelogs: | Изменения:
 
-### Beta - V1:
+### Alpha - V1.0:
 
 ```
 ENG:
@@ -213,7 +213,7 @@ RU:
             [+] snowdrake
 ```
 
-### Beta - V0.3:
+### Pre-alpha - V0.3:
 
 ```
 ENG:
@@ -271,7 +271,7 @@ RU:
 [~] Фиксы багов с биндами, средствами выбора цвета и другими элементами пользовательского интерфейса
 ```
 
-### Beta - V0.2:
+### Pre-alpha - V0.2:
 ```
 ENG:
 [~] Fixed some colors that didnt work at visuals tab
